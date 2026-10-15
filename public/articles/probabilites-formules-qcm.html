@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-title-ar="ملخص قوانين الاحتمالات للامتحانات (Probabilités) — Polyko" data-title-fr="ملخص قوانين الاحتمالات للامتحانات (Probabilités) — Polyko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ملخص قوانين الاحتمالات للامتحانات (Probabilités) — Polyko</title>
+<meta name="description" content="أهم قوانين الاحتمالات في الجامعة: العد، الاحتمال الشرطي، القوانين المتقطعة والمستمرة والقانون الطبيعي، مع أمثلة محلولة وطرق لحل أسئلة QCM.">
+<meta name="theme-color" content="#2D3BFF">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="icon" href="../assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>try{var d=document.documentElement,t=localStorage.getItem('polyko-theme');if(t)d.setAttribute('data-theme',t);var l=localStorage.getItem('polyko-lang')==='fr'?'fr':'ar';d.setAttribute('lang',l);d.setAttribute('dir',l==='fr'?'ltr':'rtl')}catch(e){}</script>
+<meta property="og:type" content="article">
+<meta property="og:title" content="ملخص قوانين الاحتمالات للامتحانات (Probabilités)">
+<meta property="og:description" content="أهم قوانين الاحتمالات في الجامعة: العد، الاحتمال الشرطي، القوانين المتقطعة والمستمرة والقانون الطبيعي، مع أمثلة محلولة وطرق لحل أسئلة QCM.">
+<meta property="og:site_name" content="Polyko">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ملخص قوانين الاحتمالات للامتحانات (Probabilités)", "description": "أهم قوانين الاحتمالات في الجامعة: العد، الاحتمال الشرطي، القوانين المتقطعة والمستمرة والقانون الطبيعي، مع أمثلة محلولة وطرق لحل أسئلة QCM.", "inLanguage": "ar", "datePublished": "2026-10-13", "dateModified": "2026-10-13", "publisher": {"@type": "Organization", "name": "Polyko"}}</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <div class="top-row">
+      <div class="lead"><button type="button" class="icon-btn" id="backBtn" aria-label="رجوع" hidden><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></button>
+      <a href="../index.html" class="brand" aria-label="Polyko">
+        <svg viewBox="0 0 200 200" aria-hidden="true"><g transform="rotate(-5 100 100)">
+<path d="M50 30 H122 L160 68 V160 a14 14 0 0 1 -14 14 H50 a14 14 0 0 1 -14 -14 V44 a14 14 0 0 1 14 -14 Z" fill="#FFFFFF"/>
+<path d="M122 30 V58 a10 10 0 0 0 10 10 H160 Z" fill="#FFD60A"/>
+<circle cx="74" cy="100" r="14" fill="#2D3BFF"/>
+<circle cx="78" cy="98" r="6.5" fill="#14142B"/>
+<circle cx="76" cy="95.5" r="2" fill="#FFFFFF"/>
+<circle cx="118" cy="100" r="14" fill="#2D3BFF"/>
+<circle cx="122" cy="98" r="6.5" fill="#14142B"/>
+<circle cx="120" cy="95.5" r="2" fill="#FFFFFF"/>
+<path d="M76 134 Q96 152 118 134" fill="none" stroke="#14142B" stroke-width="6" stroke-linecap="round"/>
+</g></svg>
+        <span class="word">polyko</span>
+      </a>
+      </div>
+      <div class="tools">
+        <a class="icon-btn" href="../game.html" id="gameBtn" aria-label="Game ys" title="Game ys"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 11h4M8 9v4"/><path d="M15.5 10.6h.01M17.5 12.6h.01"/><path d="M17.3 5H6.7a4 4 0 0 0-3.9 3.2l-1 5.6A3 3 0 0 0 7.5 16l1-1.5h7l1 1.5a3 3 0 0 0 5.7-2.2l-1-5.6A4 4 0 0 0 17.3 5z"/></svg></a>
+        <button class="icon-btn" id="langBtn" type="button">FR</button>
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="تبديل الوضع الداكن"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="wrap page article">
+<nav class="crumbs" aria-label="breadcrumb"><a href="../articles.html">المقالات</a></nav>
+<article dir="rtl" lang="ar">
+<h1>ملخص قوانين الاحتمالات للامتحانات (Probabilités)</h1>
+<p class="meta">آخر تحديث: <span class="ltr">2026-10-13</span> · وقت القراءة: 9 دقائق</p>
+<p>امتحانات Probabilités في الجامعة غالباً أسئلة اختيار من متعدد (QCM) تدور حول العد، والاحتمال الشرطي، والمتغيرات العشوائية. هذا الملخص يجمع القوانين التي تحتاجها مع أمثلة تطبّقها.</p>
+
+<h2>1) العد (Dénombrement)</h2>
+<ul>
+<li><b>التبديلات:</b> <span class="m">n!</span> طريقة لترتيب n عنصراً مختلفاً.</li>
+<li><b>الترتيبات (Arrangements):</b> <span class="m">A(n,p) = n!/(n−p)!</span> عندما يهم الترتيب بدون تكرار.</li>
+<li><b>التوافيق (Combinaisons):</b> <span class="m">C(n,p) = n!/(p!·(n−p)!)</span> عندما لا يهم الترتيب.</li>
+<li><b>السحب مع الإرجاع (avec remise):</b> <span class="m">nᵖ</span> إمكانية لسحب p مرة من n عنصراً.</li>
+</ul>
+<p><b>تباديل حروف كلمة (Anagrammes):</b> نقسم <span class="m">n!</span> على مضروب تكرار كل حرف. مثال: كلمة ANANAS فيها 6 حروف، منها A ثلاث مرات وN مرتان، فعدد التباديل <span class="m">6!/(3!·2!) = 60</span>.</p>
+
+<h2>2) قوانين الاحتمال الأساسية</h2>
+<ul>
+<li><span class="m">P(Ā) = 1 − P(A)</span>.</li>
+<li><span class="m">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</span>.</li>
+<li>الاستقلال: A وB مستقلان إذا وفقط إذا <span class="m">P(A ∩ B) = P(A)·P(B)</span>.</li>
+<li>قانونا دي مورغان: <span class="m">P(Ā ∩ B̄) = 1 − P(A ∪ B)</span>.</li>
+</ul>
+
+<h2>3) الاحتمال الشرطي</h2>
+<ul>
+<li><span class="m">P(A|B) = P(A ∩ B) / P(B)</span> بشرط <span class="m">P(B) > 0</span>.</li>
+<li>قانون الاحتمالات الكلية: <span class="m">P(A) = P(A|B)·P(B) + P(A|B̄)·P(B̄)</span>.</li>
+<li>قانون بايز: <span class="m">P(B|A) = P(A|B)·P(B) / P(A)</span>.</li>
+</ul>
+<p><b>مثال:</b> في شركة، 20% من الموظفين إطارات، و30% من الإطارات يتحدثون الإنجليزية، و10% من غير الإطارات كذلك. احتمال أن يتحدث موظف عشوائي الإنجليزية: <span class="m">0.2×0.3 + 0.8×0.1 = 0.14</span>. وإذا علمنا أنه يتحدث الإنجليزية فاحتمال أن يكون إطاراً: <span class="m">0.06/0.14 ≈ 0.43</span>.</p>
+<p>ارسم دائماً <b>شجرة الاحتمالات</b>؛ فهي تقلّل الأخطاء في هذه الأسئلة.</p>
+
+<h2>4) المتغيرات العشوائية المتقطعة</h2>
+<ul>
+<li>شرط أساسي: مجموع الاحتمالات يساوي 1، وبه نجد المجهول في جدول القانون.</li>
+<li>الأمل الرياضي: <span class="m">E(X) = Σ xᵢ·P(X = xᵢ)</span> والتباين: <span class="m">V(X) = E(X²) − E(X)²</span>.</li>
+<li><b>القانون المنتظم المتقطع على {1,…,n}:</b> <span class="m">P(X=k) = 1/n</span> و <span class="m">E(X) = (n+1)/2</span> و <span class="m">V(X) = (n²−1)/12</span>.</li>
+<li><b>القانون الهندسي (loi géométrique) بالوسيط p:</b> <span class="m">P(X=k) = q^(k−1)·p</span> مع <span class="m">q = 1−p</span> و <span class="m">E(X) = 1/p</span> و <span class="m">V(X) = q/p²</span>. يمثل رتبة أول نجاح.</li>
+<li><b>القانون الثنائي (loi binomiale):</b> <span class="m">P(X=k) = C(n,k)·pᵏ·qⁿ⁻ᵏ</span> و <span class="m">E(X) = n·p</span> و <span class="m">V(X) = n·p·q</span>.</li>
+</ul>
+
+<h2>5) المتغيرات المستمرة</h2>
+<ul>
+<li>الكثافة f تحقق <span class="m">∫ f(x) dx = 1</span> على كل المجال، وبها نحسب الثابت المجهول.</li>
+<li><span class="m">P(a < X < b) = ∫ₐᵇ f(x) dx</span> و <span class="m">E(X) = ∫ x·f(x) dx</span>.</li>
+<li><b>القانون المنتظم على [a,b]:</b> <span class="m">E(X) = (a+b)/2</span> و <span class="m">V(X) = (b−a)²/12</span>.</li>
+</ul>
+<p><b>مثال محلول:</b> <span class="m">f(x) = k·x²</span> على <span class="m">[0, 2]</span> وتساوي 0 خارجه.</p>
+<ol>
+<li><span class="m">∫₀² k·x² dx = k·8/3 = 1</span> إذن <span class="m">k = 3/8</span>.</li>
+<li><span class="m">P(0 < X < 1) = ∫₀¹ (3/8)x² dx = 1/8</span>.</li>
+<li><span class="m">E(X) = ∫₀² x·(3/8)x² dx = (3/8)·(2⁴/4) = 3/2</span>.</li>
+</ol>
+
+<h2>6) القانون الطبيعي (loi normale)</h2>
+<p>إذا كان <span class="m">X ~ N(μ, σ)</span> فإن <span class="m">Z = (X − μ)/σ ~ N(0,1)</span>. نحول كل سؤال إلى Z ونستعمل جدول الدالة التراكمية <span class="m">Φ</span>، مع الخاصية <span class="m">Φ(−x) = 1 − Φ(x)</span>.</p>
+<p><b>مثال:</b> <span class="m">X ~ N(5000, 100)</span>. <span class="m">P(X < 5200) = Φ((5200−5000)/100) = Φ(2)</span>. وبالجدول ≈ 0.9772.</p>
+<p><b>مثال على المجال:</b> <span class="m">P(−1 < Z < 1) = Φ(1) − Φ(−1) = 2Φ(1) − 1</span>.</p>
+
+<h2>نصائح لحل QCM</h2>
+<ul>
+<li>اقرأ هل النقاط تُخصم عند الخطأ (barème). قد يكون ترك السؤال أفضل من التخمين.</li>
+<li>أحياناً الإجابة الصحيحة ليست بين الاقتراحات، فيوجد خيار «Autre». تحقق من حسابك قبل اختياره.</li>
+<li>استعمل التحقق: احتمال لا يتجاوز 1 أبداً، ومجموع احتمالات القانون يساوي 1.</li>
+<li>حلّ امتحانات السنوات السابقة بالترتيب وراقب الوقت.</li>
+</ul>
+</article>
+<aside id="adEnd" class="ad-end" aria-label="إعلان"></aside>
+<section class="more"><h2>اقرأ أيضاً</h2><ul class="rel"><li><a href="analyse-mathematique-s1-guide.html">دليل مراجعة Analyse Mathématique في S1</a></li><li><a href="reviser-avec-les-examens-precedents.html">كيف تراجع بالامتحانات السابقة بطريقة فعالة</a></li><li><a href="organiser-emploi-du-temps-universitaire.html">كيف تنظم أسبوعك الجامعي انطلاقاً من جدول التوقيت</a></li><li><a href="session-normale-et-rattrapage.html">الدورة العادية والاستدراكية: ما الفرق وكيف تستعد؟</a></li></ul><p><a class="btn ghost sm" href="../index.html">العودة إلى Polyko</a></p></section>
+</main>
+<footer class="wrap foot">
+  <nav aria-label="Polyko">
+    <a href="../index.html"><span lang="ar">الرئيسية</span><span lang="fr">Accueil</span></a>
+    <a href="../articles.html"><span lang="ar">المقالات</span><span lang="fr">Articles</span></a>
+    <a href="../about.html"><span lang="ar">من نحن</span><span lang="fr">À propos</span></a>
+    <a href="../contact.html"><span lang="ar">اتصل بنا</span><span lang="fr">Contact</span></a>
+    <a href="../privacy.html"><span lang="ar">سياسة الخصوصية</span><span lang="fr">Confidentialité</span></a>
+  </nav>
+</footer>
+<script src="../data.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/ads.js"></script>
+</body>
+</html>

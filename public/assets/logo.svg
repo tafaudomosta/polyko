@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="190" height="190" viewBox="0 0 200 200" role="img" aria-label="Polyko">
+<rect width="200" height="200" rx="44" fill="#2D3BFF"/>
+<g transform="rotate(-5 100 100)">
+<path d="M50 30 H122 L160 68 V160 a14 14 0 0 1 -14 14 H50 a14 14 0 0 1 -14 -14 V44 a14 14 0 0 1 14 -14 Z" fill="#FFFFFF"/>
+<path d="M122 30 V58 a10 10 0 0 0 10 10 H160 Z" fill="#FFD60A"/>
+<circle cx="74" cy="100" r="14" fill="#2D3BFF"/>
+<circle cx="78" cy="98" r="6.5" fill="#14142B"/>
+<circle cx="76" cy="95.5" r="2" fill="#FFFFFF"/>
+<circle cx="118" cy="100" r="14" fill="#2D3BFF"/>
+<circle cx="122" cy="98" r="6.5" fill="#14142B"/>
+<circle cx="120" cy="95.5" r="2" fill="#FFFFFF"/>
+<path d="M76 134 Q96 152 118 134" fill="none" stroke="#14142B" stroke-width="6" stroke-linecap="round"/>
+</g>
+</svg>
